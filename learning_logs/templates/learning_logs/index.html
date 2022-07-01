@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main site</title>
+</head>
+<body>
+    {% extends "learning_logs/base.html" %}
+
+    {% block page_header %}
+        <div class='jumbotron'>
+            <h1 class="display-3">Observe your learning progress during studies.</h1>
+
+            <p class="lead"> This application focuses on improving the quality of life through the organization of events.
+            After registration and logging in, you will be able to write down all meetings, major upcoming episodes
+            and much much more....</p>
+
+            <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button"> Register account &raquo</a>
+        </div>
+
+    {% endblock page_header %}
+
+</body>
+</html>
